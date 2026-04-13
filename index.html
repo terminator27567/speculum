@@ -241,7 +241,22 @@
   .testimonial-stars { color:var(--gold-bright);font-size:12px;letter-spacing:3px;opacity:0.85;margin-bottom:4px; }
   .testimonial-text { font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;line-height:1.85;color:rgba(242,242,242,0.82);padding-top:32px;flex:1; }
   .testimonial-author-row { border-top:1px solid rgba(232,201,122,0.15);padding-top:20px;display:flex;align-items:center;gap:16px; }
-  .photo-avatar { width:64px;height:64px;border-radius:50%;border:1.5px dashed rgba(232,201,122,0.4);background:rgba(232,201,122,0.04);display:flex;align-items:center;justify-content:center;color:rgba(232,201,122,0.3);font-size:22px;flex-shrink:0;overflow:hidden; }
+  .photo-avatar {
+    width: 60px; /* O el tamaño que prefieras para el círculo */
+    height: 60px;
+    border-radius: 50%; /* Esto las hace redondas */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--accent); /* Un toque dorado sutil */
+}
+
+.testimonial-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
   .testimonial-name { font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.25em;color:var(--gold-bright); }
   .testimonial-meta { font-family:'Cormorant Garamond',serif;font-size:14px;color:rgba(156,163,175,0.5);font-style:italic; }
 
@@ -634,7 +649,9 @@
         <div class="testimonial-stars">★★★★★</div>
         <p class="testimonial-text">Llegué sin saber muy bien qué esperar. Salí con algo que no tenía nombre pero que sentí en el cuerpo: claridad. Llevaba años tomando las mismas decisiones disfrazadas de distintas formas. La sesión me mostró el patrón con una precisión que me dejó sin palabras.</p>
         <div class="testimonial-author-row">
-          <div class="photo-avatar">◇</div>
+          <div class="photo-avatar">
+            <img src="images/testimonio-mg.jpg" alt="Diseñadora Buenos Aires" class="testimonial-photo">
+          </div>
           <div><div class="testimonial-name">M. G.</div><div class="testimonial-meta">Buenos Aires · Diseñadora</div></div>
         </div>
       </div>
@@ -642,7 +659,9 @@
         <div class="testimonial-stars">★★★★★</div>
         <p class="testimonial-text">Soy terapeuta y llegué con mucho escepticismo. Lo que me sorprendió fue la profundidad del enfoque — no hay espectáculo, no hay drama. Solo un espejo muy bien sostenido. El protocolo de integración me pareció lo más valioso: sencillo y efectivo.</p>
         <div class="testimonial-author-row">
-          <div class="photo-avatar">◇</div>
+          <div class="photo-avatar">
+            <img src="images/testimonio-rv.jpg" alt="Psicóloga México" class="testimonial-photo">
+          </div>
           <div><div class="testimonial-name">R. V.</div><div class="testimonial-meta">Ciudad de México · Psicóloga</div></div>
         </div>
       </div>
@@ -650,7 +669,9 @@
         <div class="testimonial-stars">★★★★★</div>
         <p class="testimonial-text">Había trabajado mucho en mí — terapia, meditación, libros. Pero algo seguía igual. La sesión tocó algo que todo lo demás había rodeado sin entrar. No fue fácil mirarlo, pero fue exactamente lo que necesitaba. Ya reservé una segunda sesión.</p>
         <div class="testimonial-author-row">
-          <div class="photo-avatar">◇</div>
+          <div class="photo-avatar">
+            <img src="images/testimonio-cl.jpg" alt="Emprendedora Madrid" class="testimonial-photo">
+          </div>
           <div><div class="testimonial-name">C. L.</div><div class="testimonial-meta">Madrid · Emprendedora</div></div>
         </div>
       </div>
