@@ -157,7 +157,13 @@
   .photo-frame-corner.tr { top:3px;right:3px;border-width:1.5px 1.5px 0 0; }
   .photo-frame-corner.bl { bottom:3px;left:3px;border-width:0 0 1.5px 1.5px; }
   .photo-frame-corner.br { bottom:3px;right:3px;border-width:0 1.5px 1.5px 0; }
-  .photo-placeholder { width:100%;aspect-ratio:4/3;background:rgba(232,201,122,0.03);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;position:relative;overflow:hidden; }
+  .photo-placeholder img {
+    max-width: 100%;  /* No puede ser más ancha que su contenedor */
+    max-height: 100%; /* No puede ser más alta que su contenedor */
+    display: block;   /* Elimina espacios extraños debajo */
+    margin: 0 auto;   /* Centra la imagen horizontalmente */
+    object-fit: cover; /* Importante: recorta la imagen para que llene el espacio sin deformarse */
+}
   .photo-placeholder::before { content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(232,201,122,0.05) 0%,transparent 70%); }
   .photo-placeholder-icon { color:rgba(232,201,122,0.35);font-size:28px; }
   .photo-placeholder-label { font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.3em;color:rgba(232,201,122,0.3);text-align:center;line-height:1.8; }
